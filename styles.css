@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #cee1e6; 
+}
+
+.burbuja {
+    position: absolute;
+    bottom: -100px; 
+    width: 100px;
+    height: 100px;
+    background-color: rgba(96, 182, 231, 0.5);
+    border-radius: 50%;
+    animation: flotacion 10s linear infinite;
+    margin: 20px;
+}
+
+.burbuja.color1 { background-color: red; }
+.burbuja.color2 { background-color: green; }
+.burbuja.color3 { background-color: blue; }
+.burbuja.color4 { background-color: yellow; }
+.burbuja.color5 { background-color: orange; }
+.burbuja.color6 { background-color: pink; }
+.burbuja.color7 { background-color: purple; }
+.burbuja.color8 { background-color: brown; }
+.burbuja.color9 { background-color: cadetblue; }
+
+.mensaje-final {
+    background-color: rgb(247, 0, 255);
+    text-decoration: dotted;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    color: white;
+    display: none;
+}
+
+.titulo {
+    text-align: center;
+    color: purple;
+    text-overflow: clip;
+}
+
+@keyframes flotacion {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    25% {
+        transform: translateX(20vw) translateY(-25vh);
+    }
+    50% {
+        transform: translateX(-20vw) translateY(-50vh);
+    }
+    85% {
+        transform: translateX(20vw) translateY(-75vh);
+    }
+    105% {
+        transform: translateX(0) translateY(-100vh);
+    }
+}
+
+/* Animaciones individuales para cada burbuja */
+.burbuja:nth-child(1) {
+    animation-duration: 5s;
+    left: 10%;
+}
+.burbuja:nth-child(2) {
+    animation-duration: 7s;
+    left: 20%;
+}
+.burbuja:nth-child(3) {
+    animation-duration: 6s;
+    left: 30%;
+}
+.burbuja:nth-child(4) {
+    animation-duration: 4s;
+    left: 40%;
+}
+.burbuja:nth-child(5) {
+    animation-duration: 7s;
+    left: 50%;
+}
+.burbuja:nth-child(6) {
+    animation-duration: 3s;
+    left: 60%;
+}
+.burbuja:nth-child(7) {
+    animation-duration: 6s;
+    left: 70%;
+}
+.burbuja:nth-child(8) {
+    animation-duration: 9s;
+    left: 80%;
+}
+.burbuja:nth-child(9) {
+    animation-duration: 11s;
+    left: 90%;
+}
